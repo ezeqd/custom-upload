@@ -15,8 +15,8 @@ function cu_load_files_permision_by_user(){
     wp_die();
     }
 
-    $queryStr = "SELECT wd_cu_files.*, wd_cu_access.access_id, wd_cu_access.user_id FROM wd_cu_files ";
-    $queryStr.= "LEFT JOIN wd_cu_access ON wd_cu_files.file_id=wd_cu_access.file_id AND wd_cu_access.user_id=".$user;
+    $queryStr = "SELECT wp_cu_files.*, wp_cu_access.access_id, wp_cu_access.user_id FROM wp_cu_files ";
+    $queryStr.= "LEFT JOIN wp_cu_access ON wp_cu_files.file_id=wp_cu_access.file_id AND wp_cu_access.user_id=".$user;
 
     $access = $wpdb->get_results($queryStr, OBJECT);
    ?>

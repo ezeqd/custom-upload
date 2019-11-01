@@ -1,7 +1,7 @@
 <?php
 class Clients{
-    const TABLE = 'wd_cu_clientes';
-    const RELATED = 'wd_cu_sucursales';
+    const TABLE = 'wp_cu_clientes';
+    const RELATED = 'wp_cu_sucursales';
     
   static function getSpecialKeys(){
       return ['direccion_publica', 'sitio_web', 'telefono'];
